@@ -15,6 +15,8 @@ Download this repository and install by:
 ```
 cd THE-mask && pip install -e . --user
 ```
+Other requirements (see `the_requirements.txt`):
+```CUDA11.0, pytorch==1.7.1, torchvision==0.8.2, mmcv==1.3.0, detectron2==0.5+cu110```.
 
 After preparing the required environment, run the following command to compile CUDA kernel for MSDeformAttn as in [Mask2Former](https://github.com/facebookresearch/Mask2Former/blob/main/INSTALL.md):
 
@@ -25,8 +27,6 @@ cd mmseg/models/decode_heads/mask2former/pixel_decoder/ops
 sh make.sh
 ```
 
-Other requirements (see `the_requirements.txt`):
-```CUDA11.0, pytorch==1.7.1, torchvision==0.8.2, mmcv==1.3.0, detectron2==0.5+cu110```.
 
 ## Usage
 ### Data preparation
